@@ -6,6 +6,9 @@ import { HightlightComponent } from './pages/hightlight/hightlight.component';
 import { ActivityfeedComponent } from './pages/activityfeed/activityfeed.component';
 import { WorldmapComponent } from './pages/worldmap/worldmap.component';
 import { DataTablesModule } from 'angular-datatables';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ToastrModule} from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { DataTablesModule } from 'angular-datatables';
   imports: [
     BrowserModule,
     DataTablesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(),
+    HttpClientModule// ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]
