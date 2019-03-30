@@ -24,6 +24,7 @@ body {
 
 .sidenav a:hover {
   color: #f1f1f1;
+  //border:2px solid white;
 }
 
 .main {
@@ -66,4 +67,10 @@ body {
   //background-color: 2px solid;
   border: 2px solid black;
   padding: 40px;
+}
+.height_adjust{
+  height: 100%;
+}
+.height_adjust_second{
+  height: 100%;
 }
