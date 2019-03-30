@@ -45,8 +45,11 @@ body {
 .header_class{
   background-color: #111111;
   color: white;
-  margin-left: 152px;
+  margin-left: 168px;
   //margin-top: -36px;
   margin-right: -8px;
 }
 
+table.table.table-striped-.table-bordered.table-hover.table-checkable {
+  margin-left: -4px !important;
+}
