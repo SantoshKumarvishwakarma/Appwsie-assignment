@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,11 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgxSpinnerModule,
     NgxPaginationModule,
     NgbModule,
+    AgmCoreModule.forRoot({
+      // please get your own API key here:
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+      // apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
+    }),
     HttpClientModule// ToastrModule added
   ],
   providers: [],
