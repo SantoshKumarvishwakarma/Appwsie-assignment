@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HightlightComponent } from './pages/hightlight/hightlight.component';
 import { ActivityfeedComponent } from './pages/activityfeed/activityfeed.component';
 import { WorldmapComponent } from './pages/worldmap/worldmap.component';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { WorldmapComponent } from './pages/worldmap/worldmap.component';
   ],
   imports: [
     BrowserModule,
+    DataTablesModule,
     AppRoutingModule
   ],
   providers: [],
