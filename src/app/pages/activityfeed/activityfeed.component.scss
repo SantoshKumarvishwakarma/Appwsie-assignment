@@ -42,7 +42,7 @@ body {
   background-color: #111111;
   color: white;
   margin-left: 152px;
-  margin-top: -36px;
+  //margin-top: -36px;
   margin-right: -8px;
 }
 
@@ -50,4 +50,20 @@ body {
   background-color: #4286f4;
 }
 
+//boostrap css
 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 165px;
+}
+
+.bg-info {
+  background-color: white !important;
+  //background-color: 2px solid;
+  border: 2px solid black;
+  padding: 40px;
+}
