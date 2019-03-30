@@ -4,13 +4,17 @@ import {AfterViewInit, Component, OnInit, ViewChild, OnDestroy, ChangeDetectorRe
 import {DataTableDirective} from 'angular-datatables';
 import {Subject} from "rxjs/index";
 import { NgxSpinnerService } from 'ngx-spinner';
+import {NgbPaginationConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-hightlight',
   templateUrl: './hightlight.component.html',
-  styleUrls: ['./hightlight.component.scss']
+  styleUrls: ['./hightlight.component.scss'],
+  providers: [NgbPaginationConfig] // add NgbPaginationConfig to the component providers
+
 })
 export class HightlightComponent implements OnInit {
+  page = 4;
   dtOptions: { dom: string; "aLengthMenu": {}; };
   @ViewChild(DataTableDirective)
   dtElement: DataTableDirective;
@@ -18,7 +22,11 @@ export class HightlightComponent implements OnInit {
   data: any;
   errorMsg = '';
 
-  constructor(private toastr: ToastrService, private highlightservice: HighlightService,private spinner: NgxSpinnerService) {}
+  constructor(private toastr: ToastrService, private highlightservice: HighlightService,private spinner: NgxSpinnerService,config: NgbPaginationConfig) {
+    // customize default values of paginations used by this component tree
+    config.size = 'sm';
+    config.boundaryLinks = true;
+  }
 
   ngOnInit() {
     this.dtOptions = {

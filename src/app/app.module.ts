@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ToastrModule} from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(),
     NgxSpinnerModule,
+    NgxPaginationModule,
+    NgbModule,
     HttpClientModule// ToastrModule added
   ],
   providers: [],

@@ -45,11 +45,14 @@ body {
 .header_class{
   background-color: #111111;
   color: white;
-  margin-left: 168px;
+  margin-left: 159px;
   //margin-top: -36px;
   margin-right: -8px;
 }
 
 table.table.table-striped-.table-bordered.table-hover.table-checkable {
-  margin-left: -4px !important;
+  margin-left: -12px !important;
+}
+.pagination_adjust {
+  float: right !important;
 }
